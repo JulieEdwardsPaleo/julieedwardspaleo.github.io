@@ -5,12 +5,20 @@
     <link>https://JulieEdwardsPaleo.github.io/project/</link>
       <atom:link href="https://JulieEdwardsPaleo.github.io/project/index.xml" rel="self" type="application/rss+xml" />
     <description>Projects</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 02 Dec 2019 16:55:16 -0700</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 12 May 2020 18:12:45 -0700</lastBuildDate>
     <image>
       <url>https://JulieEdwardsPaleo.github.io/img/icon-192.png</url>
       <title>Projects</title>
       <link>https://JulieEdwardsPaleo.github.io/project/</link>
     </image>
+    
+    <item>
+      <title>Collabresearch</title>
+      <link>https://JulieEdwardsPaleo.github.io/project/collabresearch/</link>
+      <pubDate>Tue, 12 May 2020 18:12:45 -0700</pubDate>
+      <guid>https://JulieEdwardsPaleo.github.io/project/collabresearch/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>1783 Laki Eruption and Alaska</title>
