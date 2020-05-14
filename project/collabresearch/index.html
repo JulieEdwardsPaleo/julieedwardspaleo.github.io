@@ -300,7 +300,7 @@
         cel.style.bottom = pad.bottom + "px";
         cel.style.left = pad.left + "px";
         el.style.width = "100%";
-        el.style.height = "100%";
+        el.style.height = "60%";
       }
 
       return {
@@ -936,7 +936,7 @@ return function(){for(var n=0,e=0;e<t;++e)n+=Math.random();return n}},um=functio
         .attr("width", width)
         .attr("height", height);
 
-    force.force("center", d3.forceCenter(width / 2, height / 2))
+    force.force("center", d3.forceCenter(width / 2, height /2))
         .restart();
   },
 
@@ -1010,13 +1010,16 @@ return function(){for(var n=0,e=0;e<t;++e)n+=Math.random();return n}},um=functio
       }
 
     // select the svg element and remove existing children
-    var svg = d3.select(el).select("svg");
+    var svg = d3.select(el).select("svg")
+	
     svg.selectAll("*").remove();
     // add two g layers; the first will be zoom target if zoom = T
     //  fine to have two g layers even if zoom = F
     svg = svg
         .append("g").attr("class","zoom-layer")
         .append("g")
+
+
 
     // add zooming if requested
     if (options.zoom) {
@@ -1085,26 +1088,29 @@ return function(){for(var n=0,e=0;e<t;++e)n+=Math.random();return n}},um=functio
       .on("click", click)
       .call(drag);
 
+    node.append("svg:text")
+      .attr("class", "nodetext")
+      .attr("dx", 22)
+      .attr("dy", ".35em")
+      .text(function(d) { return d.grp })
+	  .style("text-shadow", "-2px 0 white, 0 2px white, 2px 0 white, 0 -2px white")
+      .style("font", options.fontSize + "px " + options.fontFamily)
+      //.style("opacity", options.opacityNoHover)
+      .style("pointer-events", "none");
+	  
     node.append("circle")
       .attr("r", function(d){return nodeSize(d);})
       .style("stroke", "#fff")
       .style("opacity", options.opacity)
       .style("stroke-width", "1.5px");
 
-    node.append("svg:text")
-      .attr("class", "nodetext")
-      .attr("dx", 12)
-      .attr("dy", ".35em")
-      .text(function(d) { return d.name })
-      .style("font", options.fontSize + "px " + options.fontFamily)
-      .style("opacity", options.opacityNoHover)
-      .style("pointer-events", "none");
+
 
     function tick() {
       node.attr("transform", function(d) {
         if(options.bounded){ // adds bounding box
             d.x = Math.max(nodeSize(d), Math.min(width - nodeSize(d), d.x));
-            d.y = Math.max(nodeSize(d), Math.min(height - nodeSize(d), d.y));
+            d.y = Math.max(nodeSize(d)*2, Math.min(height*2 - nodeSize(d), d.y));
         }
 
         return "translate(" + d.x + "," + d.y + ")"});
@@ -1132,6 +1138,21 @@ return function(){for(var n=0,e=0;e<t;++e)n+=Math.random();return n}},um=functio
         .attr("y2", function(d) { return idx(d, "y2"); });
     }
 
+d3.select('body').append('div').attr('id', 'tooltip')
+  .style('max-width','250px')
+  .style('max-height','500px')
+  .style('position', 'absolute')
+  .style('font-family', 'sans-serif')
+  .style('border', '1px solid #999')
+  .style('border-radius', '3px')
+  .style('padding', '5px')
+  .style('opacity', '0')
+  .style('background-color', '#fff')
+  .style('box-shadow', '2px 2px 6px #fff')
+  .style('left', (d3.event.pageX) + 'px')
+  .style('top', (d3.event.pageY - 28) + 'px');
+
+  
     function mouseover(d) {
       // unfocus non-connected links and nodes
       //if (options.focusOnHover) {
@@ -1143,7 +1164,6 @@ return function(){for(var n=0,e=0;e<t;++e)n+=Math.random();return n}},um=functio
         node.transition().duration(200)
           .style("opacity", function(o) { return d.index == o.index || neighboring(d, o) ? +options.opacity : +options.opacity / unfocusDivisor; });
       //}
-
       d3.select(this).select("circle").transition()
         .duration(750)
         .attr("r", function(d){return nodeSize(d)+5;});
@@ -1153,24 +1173,31 @@ return function(){for(var n=0,e=0;e<t;++e)n+=Math.random();return n}},um=functio
         .style("stroke-width", ".5px")
         .style("font", options.clickTextSize + "px ")
         .style("opacity", 1);
+		
+		   return d3.select('#tooltip').transition().duration(0).style('opacity', 0.8).text( d.name ).style('right', 10+ 'px')
+  .style('top', 70 + 'px');
     }
+
+
 
     function mouseout() {
       node.style("opacity", +options.opacity);
       link.style("opacity", +options.opacity);
-
       d3.select(this).select("circle").transition()
         .duration(750)
         .attr("r", function(d){return nodeSize(d);});
       d3.select(this).select("text").transition()
         .duration(1250)
         .attr("x", 0)
-        .style("font", options.fontSize + "px ")
-        .style("opacity", options.opacityNoHover);
+        .style("font", options.fontSize + "px ");
+        //.style("opacity", options.opacityNoHover);
+
     }
 
     function click(d) {
-      return eval(options.clickAction)
+      return d3.select('#tooltip').transition().duration(0).style('opacity', 0.8).text( d.name ).style('right', 10 + 'px')
+  .style('top', 70 + 'px');
+  
     }
 
     // add legend option
@@ -1207,14 +1234,68 @@ return function(){for(var n=0,e=0;e<t;++e)n+=Math.random();return n}},um=functio
   },
 });
 </script>
-</head>
-<body style="background-color: white;">
-<div id="htmlwidget_container">
-<div id="htmlwidget-7037a009126e6931a2f1" class="forceNetwork html-widget" style="width:960px;height:500px;">
+<style>
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
 
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+</style>
+</head>
+<body>
+
+
+
+<div id="htmlwidget_container" style="width:100%;height:100%";>
+<button type="button" class="collapsible">Collaborative Research Network Diagram  Information</button>
+<div class="content">
+  <p>This interactive network diagram displays the 7 major components of successful collaborative research and the actions you can take within those 7 components. 
+  </p><p><b>Instructions</b>: The 7 major components or "major nodes" are represented by the larger blue circles, while the actionable items or "sub-nodes" are represented by the smaller light blue circles.</p>
+  <p>Click on a major node to see a more in-depth description
+  <br>Click on the sub-nodes to reveal the actions neccessary for success in a collaborative research project.</br></p><p> Zoom and drag capable</p>
+  <p><i>Authors: Julie Edwards, Talia Anderson, Alice Chapman, Ida Sami, Connie Woodhouse</i></p>
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+<div id="htmlwidget-ecd8dd1607ed37e6f0e7" class="forceNetwork html-widget" style="width:100%;height:60%;padding-top: 5px; position: relative;left: 0;top: 5%;">
+
+<script type="application/json" data-for="htmlwidget-ecd8dd1607ed37e6f0e7">{"x":{"links":{"source":[1,2,4,2,4,0,2,0,5,6,4,2,0,5,3,5,0,1,6,5,6,0,4,6,4,5,1,3,6,0,4,1],"target":[14,14,14,9,9,9,7,7,7,15,15,15,15,16,16,11,11,11,11,10,10,17,17,13,13,13,8,8,8,12,12,12],"colour":["#666","#666","#666","#666","#666","#666","#666","#666","#666","#666","#666","#666","#666","#666","#666","#666","#666","#666","#666","#666","#666","#666","#666","#666","#666","#666","#666","#666","#666","#666","#666","#666"]},"nodes":{"name":["Communication: Communication is one of the major activities required for a successful collaboration. In general, communication should be consistent, clear, relevant, timely, respectful, and open from the beginning to the end of the collaboration in order to address the research question(s).","Institutions: Institutions refer to the resources, considerations, and/or challenges related to academic and non-academic institutions/agencies/organizations involved in the collaboration.","Commitment: Commitment from all team members is necessary for collaborative research. Sustained, frequent, and quality participation ensures project success.","Framing: Framing the research project deisgn. ","Trust and mutual respect: Trust and mutual respeact are essential to collaborative research. Mutual respect is necessary for frequent communication which will build trust. Helps to build rapport between team members so that everyone is motivated to complete the project. Trust and mutual respect is also necessary to empower partners so that they know that the project belongs to them.","Usability: Usability means that the knowledge produced is accessible, understandable, and works to address a societal problem. The knowledge produced can be used by community partners within their own institution. ","Reflection and evaluation: Reflection and Evaluation includes iterative poroccesses that assess the health and success of the project.","Commit to regular and repeated interactions with stakeholders","Take the time to build in project reflection, both individually and collectively, to assess what was successful or less successful, and lessons learned that could be applied in future work ","Clarify everyone's expected contribution ","Evaluate project success, impacts and outcomes at the end of the collaborative project using clear and meaningful metrics and ","Ensure that the knowledge and/or information produced by the project is made available and accessible to your partners and others, and in formats and/or language that is understandable and useful ","Understand partners' institutional structure: familiarize yourself with the language they use and the timeline they work under","Involve community partners from the beginning","Be flexible in team composition ","Consider the relationships you have built with your team/partners, and ways to maintain these to build long-term relationships for future collaborations ","Distinguish between the research question and which societal problem it is trying to solve, consider context of research when formulating questions","If conflict arises, confront it openly, informally, and promptly"],"group":[1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2],"nodesize":[100,100,100,100,100,100,100,1,1,1,1,1,1,1,1,1,1,1],"x":[-5,1,4,-10,2,-40,0,null,null,null,null,null,null,null,null,null,null,null],"y":[-5,-4,-1,5,1,-10,-50,null,null,null,null,null,null,null,null,null,null,null],"grp":["Communication","Institutions","Commitment","Framing","Trust and Mutual Respect","Usability","Reflection and Evaluation"," "," "," "," "," "," "," "," "," "," "," "]},"options":{"NodeID":"name","Group":"group","colourScale":"d3.scaleOrdinal(d3.schemeCategory20);","fontSize":20,"fontFamily":"sans-serif","clickTextSize":50,"linkDistance":100,"linkWidth":"function(d) { return Math.sqrt(d.value); }","charge":-1500,"opacity":1,"zoom":true,"legend":false,"arrows":false,"nodesize":true,"radiusCalculation":" Math.sqrt(d.nodesize)+6","bounded":true,"opacityNoHover":0,"clickAction":"\nd3.selectAll('.xtooltip').remove(); \nd3.select('body').append('div')\n  .attr('class', 'xtooltip')\n  .style('max-width','250px')\n  .style('max-height','500px')\n  .style('position', 'absolute')\n  .style('font-family', 'sans-serif')\n  .style('border', '1px solid #999')\n  .style('border-radius', '3px')\n  .style('padding', '5px')\n  .style('opacity', '0.85')\n  .style('background-color', '#fff')\n  .style('box-shadow', '2px 2px 6px #fff')\n  .html( d.name )\n  .style('left', (d3.event.pageX) + 'px')\n  .style('top', (d3.event.pageY - 28) + 'px');\n","grp":["Communication","Institutions","Commitment","Framing","Trust and Mutual Respect","Usability","Reflection and Evaluation","Action item","Action item","Action item","Action item","Action item","Action item","Action item","Action item","Action item","Action item","Action item"]}},"evals":[],"jsHooks":[]}
+</script>
+<script type="application/htmlwidget-sizing" data-for="htmlwidget-ecd8dd1607ed37e6f0e7">{"viewer":{"width":1000,"height":700,"padding":10,"fill":true},"browser":{"width":1000,"height":700,"padding":10,"fill":true}}
+</script>
 </div>
 </div>
-<script type="application/json" data-for="htmlwidget-7037a009126e6931a2f1">{"x":{"links":{"source":[2,4,0,2,0,5,6,1,0,5,6,5,1,6,3],"target":[9,9,9,7,7,7,11,11,11,11,10,10,8,8,8],"colour":["#666","#666","#666","#666","#666","#666","#666","#666","#666","#666","#666","#666","#666","#666","#666"]},"nodes":{"name":["Communication","Institutions","Commitment","Framing","Trust and mutual respect","Usability","Reflection and evaluation","Commit to regular and repeated interactions with stakeholders","Take the time to build in project reflection, both individually and collectively, to assess what was successful or less successful, and lessons learned that could be applied in future work ","Clarify everyone's expected contribution ","Evaluate project success, impacts and outcomes at the end of the collaborative project using clear and meaningful metrics and ","Ensure that the knowledge and/or information produced by the project is made available and accessible to your partners and others, and in formats and/or language that is understandable and useful "],"group":[1,2,1,2,1,3,3,1,2,1,3,3]},"options":{"NodeID":"name","Group":"group","colourScale":"d3.scaleOrdinal(d3.schemeCategory20);","fontSize":7,"fontFamily":"serif","clickTextSize":17.5,"linkDistance":50,"linkWidth":"function(d) { return Math.sqrt(d.value); }","charge":-30,"opacity":1,"zoom":true,"legend":false,"arrows":false,"nodesize":false,"radiusCalculation":" Math.sqrt(d.nodesize)+6","bounded":true,"opacityNoHover":0,"clickAction":"alert(\"You clicked \" + d.name + \" which is in row \" + (d.index + 1) +\n\" of your original R data frame\");"}},"evals":[],"jsHooks":[]}</script>
-<script type="application/htmlwidget-sizing" data-for="htmlwidget-7037a009126e6931a2f1">{"viewer":{"width":450,"height":350,"padding":10,"fill":true},"browser":{"width":960,"height":500,"padding":10,"fill":true}}</script>
 </body>
 </html>
