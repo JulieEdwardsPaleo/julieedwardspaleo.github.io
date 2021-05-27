@@ -5,12 +5,21 @@
     <link>https://JulieEdwardsPaleo.github.io/project/</link>
       <atom:link href="https://JulieEdwardsPaleo.github.io/project/index.xml" rel="self" type="application/rss+xml" />
     <description>Projects</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 12 May 2020 18:12:45 -0700</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 26 May 2021 18:15:36 -0700</lastBuildDate>
     <image>
       <url>https://JulieEdwardsPaleo.github.io/img/icon-192.png</url>
       <title>Projects</title>
       <link>https://JulieEdwardsPaleo.github.io/project/</link>
     </image>
+    
+    <item>
+      <title>Acid damage from the 1783 Laki eruption</title>
+      <link>https://JulieEdwardsPaleo.github.io/project/lakisweden/</link>
+      <pubDate>Wed, 26 May 2021 18:15:36 -0700</pubDate>
+      <guid>https://JulieEdwardsPaleo.github.io/project/lakisweden/</guid>
+      <description>&lt;p&gt;test&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Collaborative Research</title>
