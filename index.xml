@@ -5,7 +5,7 @@
     <link>https://JulieEdwardsPaleo.github.io/</link>
       <atom:link href="https://JulieEdwardsPaleo.github.io/index.xml" rel="self" type="application/rss+xml" />
     <description>Julie Edwards</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 26 May 2021 18:15:36 -0700</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 21 Sep 2021 19:12:01 -0700</lastBuildDate>
     <image>
       <url>https://JulieEdwardsPaleo.github.io/img/icon-192.png</url>
       <title>Julie Edwards</title>
@@ -13,11 +13,20 @@
     </image>
     
     <item>
-      <title>Acid damage from the 1783 Laki eruption</title>
+      <title>Rocky Mountain bristlecone pine wood anatomy</title>
+      <link>https://JulieEdwardsPaleo.github.io/project/rmbcp/</link>
+      <pubDate>Tue, 21 Sep 2021 19:12:01 -0700</pubDate>
+      <guid>https://JulieEdwardsPaleo.github.io/project/rmbcp/</guid>
+      <description>&lt;p&gt;This project is a collaboration with Dr. Connie Woodhouse and Will Tintor. Our main research objective concerns the climate signals that are embedded in southwest tree rings, and how quantitative wood anatomy can be used to understand the climate-physiological links that result in the final tree-ring width.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Acid damage from the 1783-1784 Laki eruption</title>
       <link>https://JulieEdwardsPaleo.github.io/project/lakisweden/</link>
       <pubDate>Wed, 26 May 2021 18:15:36 -0700</pubDate>
       <guid>https://JulieEdwardsPaleo.github.io/project/lakisweden/</guid>
-      <description>&lt;p&gt;test&lt;/p&gt;
+      <description>&lt;p&gt;This project is a continuation of my previous research on the climate response to the 1783-1784 CE Laki eruption. Here we use high-resolution wood anatomical measurements to uncover the reason for discrepancies between historical observations, which record a heat-wave across large portions of Europe during the summer following the Laki eruption, and previously developed tree-ring-based temperature reconstructions, which indicate wide-spread cooling over Europe during the same time period. We find that the damaging effects of volcanic acid deposition to tree growth obfuscates an accurate temperature signal. Manuscript currently in prep. Partial funding from NSF P2C2 grant AGS-2102993&lt;/p&gt;
 </description>
     </item>
     
@@ -62,11 +71,13 @@
     </item>
     
     <item>
-      <title>1783 Laki Eruption and Alaska</title>
+      <title>1783-1784 Laki Eruption and Alaska</title>
       <link>https://JulieEdwardsPaleo.github.io/project/lakimasters/</link>
       <pubDate>Mon, 02 Dec 2019 16:55:16 -0700</pubDate>
       <guid>https://JulieEdwardsPaleo.github.io/project/lakimasters/</guid>
-      <description></description>
+      <description>&lt;p&gt;This project was the result of my master’s research into the northwestern North American climate response to the 1783-1784 CE Laki eruption. We used a combination of quantitative wood anatomy, proxy systems modeling, and climate model simulations of the Icelandic eruption to show late-summer cooling in Alaska following the eruption. This study both demonstrates the importance of timing and internal variability when comparing proxy temperature reconstructions and climate model simulations, and the value of developing cellular-scale tree-ring proxy measurements for paleoclimatology.&lt;/p&gt;
+&lt;p&gt;See related publication below&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -74,7 +85,8 @@
       <link>https://JulieEdwardsPaleo.github.io/project/ob-river/</link>
       <pubDate>Sat, 23 Nov 2019 23:56:23 -0700</pubDate>
       <guid>https://JulieEdwardsPaleo.github.io/project/ob-river/</guid>
-      <description></description>
+      <description>&lt;p&gt;This project was a collaboration between the &lt;!-- raw HTML omitted --&gt;Laboratory of Tree-Ring Research&lt;!-- raw HTML omitted --&gt; and &lt;!-- raw HTML omitted --&gt;The Institute of Plant and Animal Ecology&lt;!-- raw HTML omitted --&gt;, in Yekaterinburg. The goal of this project was to improve tree-ring based streamflow reconstruction models, particularly in years of extreme flooding. I traveled to Yekaterinburg, Russia to obtain archived riparian tree samples and focused on the wood anatomical responses to extreme floods along the Ob River. This work was funded by the CRDF Global program (Award FSCX-18-63880-0)&lt;/p&gt;
+</description>
     </item>
     
     <item>
