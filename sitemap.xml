@@ -1,288 +1,164 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
-  <url>
-    <loc>https://JulieEdwardsPaleo.github.io/</loc>
-    <lastmod>2021-09-21T19:12:01-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://JulieEdwardsPaleo.github.io/project/</loc>
-    <lastmod>2021-09-21T19:12:01-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://JulieEdwardsPaleo.github.io/project/rmbcp/</loc>
-    <lastmod>2021-09-21T19:12:01-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://JulieEdwardsPaleo.github.io/project/lakisweden/</loc>
-    <lastmod>2021-05-26T18:15:36-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://JulieEdwardsPaleo.github.io/authors/</loc>
-    <lastmod>2021-04-09T03:20:00-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://JulieEdwardsPaleo.github.io/authors/bjorn-gunnarson/</loc>
-    <lastmod>2021-04-09T03:20:00-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://JulieEdwardsPaleo.github.io/authors/brian-zambri/</loc>
-    <lastmod>2021-04-09T03:20:00-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://JulieEdwardsPaleo.github.io/authors/georg-von-arx/</loc>
-    <lastmod>2021-04-09T03:20:00-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://JulieEdwardsPaleo.github.io/authors/hans-linderholm/</loc>
-    <lastmod>2021-04-09T03:20:00-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://JulieEdwardsPaleo.github.io/authors/julie-a-edwards/</loc>
-    <lastmod>2021-04-09T03:20:00-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://JulieEdwardsPaleo.github.io/authors/kevin-j-anchukaitis/</loc>
-    <lastmod>2021-04-09T03:20:00-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://JulieEdwardsPaleo.github.io/authors/laia-andreu-hayles/</loc>
-    <lastmod>2021-04-09T03:20:00-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://JulieEdwardsPaleo.github.io/talk/</loc>
-    <lastmod>2021-04-09T03:20:00-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://JulieEdwardsPaleo.github.io/authors/rosanne-darrigo/</loc>
-    <lastmod>2021-04-09T03:20:00-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://JulieEdwardsPaleo.github.io/authors/rose-oelkers/</loc>
-    <lastmod>2021-04-09T03:20:00-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://JulieEdwardsPaleo.github.io/talk/aag2021/</loc>
-    <lastmod>2021-04-09T03:20:00-07:00</lastmod>
-  </url>
-  
   <url>
     <loc>https://JulieEdwardsPaleo.github.io/publication_types/2/</loc>
-    <lastmod>2020-12-17T13:50:11-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://JulieEdwardsPaleo.github.io/authors//-von-arx/</loc>
-    <lastmod>2020-12-17T13:50:11-07:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2022-05-11T12:30:47-07:00</lastmod>
+  </url><url>
+    <loc>https://JulieEdwardsPaleo.github.io/authors/%5C-linderholm/</loc>
+    <lastmod>2022-05-11T12:30:47-07:00</lastmod>
+  </url><url>
     <loc>https://JulieEdwardsPaleo.github.io/authors/anchukaitis/</loc>
+    <lastmod>2022-05-11T12:30:47-07:00</lastmod>
+  </url><url>
+    <loc>https://JulieEdwardsPaleo.github.io/authors/</loc>
+    <lastmod>2022-05-11T12:30:47-07:00</lastmod>
+  </url><url>
+    <loc>https://JulieEdwardsPaleo.github.io/authors/edwards/</loc>
+    <lastmod>2022-05-11T12:30:47-07:00</lastmod>
+  </url><url>
+    <loc>https://JulieEdwardsPaleo.github.io/authors/gunnarson/</loc>
+    <lastmod>2022-05-11T12:30:47-07:00</lastmod>
+  </url><url>
+    <loc>https://JulieEdwardsPaleo.github.io/</loc>
+    <lastmod>2022-05-11T12:30:47-07:00</lastmod>
+  </url><url>
+    <loc>https://JulieEdwardsPaleo.github.io/authors/pearson/</loc>
+    <lastmod>2022-05-11T12:30:47-07:00</lastmod>
+  </url><url>
+    <loc>https://JulieEdwardsPaleo.github.io/publication_types/</loc>
+    <lastmod>2022-05-11T12:30:47-07:00</lastmod>
+  </url><url>
+    <loc>https://JulieEdwardsPaleo.github.io/publication/</loc>
+    <lastmod>2022-05-11T12:30:47-07:00</lastmod>
+  </url><url>
+    <loc>https://JulieEdwardsPaleo.github.io/authors/seftigen/</loc>
+    <lastmod>2022-05-11T12:30:47-07:00</lastmod>
+  </url><url>
+    <loc>https://JulieEdwardsPaleo.github.io/publication/lakisweden/</loc>
+    <lastmod>2022-05-11T12:30:47-07:00</lastmod>
+  </url><url>
+    <loc>https://JulieEdwardsPaleo.github.io/authors/von-arx/</loc>
+    <lastmod>2022-05-11T12:30:47-07:00</lastmod>
+  </url><url>
+    <loc>https://JulieEdwardsPaleo.github.io/project/</loc>
+    <lastmod>2021-09-21T19:12:01-07:00</lastmod>
+  </url><url>
+    <loc>https://JulieEdwardsPaleo.github.io/project/rmbcp/</loc>
+    <lastmod>2021-09-21T19:12:01-07:00</lastmod>
+  </url><url>
+    <loc>https://JulieEdwardsPaleo.github.io/project/lakisweden/</loc>
+    <lastmod>2021-05-26T18:15:36-07:00</lastmod>
+  </url><url>
+    <loc>https://JulieEdwardsPaleo.github.io/authors/%5C-von-arx/</loc>
     <lastmod>2020-12-17T13:50:11-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://JulieEdwardsPaleo.github.io/authors/andreu-hayles/</loc>
     <lastmod>2020-12-17T13:50:11-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://JulieEdwardsPaleo.github.io/authors/darrigo/</loc>
     <lastmod>2020-12-17T13:50:11-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://JulieEdwardsPaleo.github.io/authors/edwards/</loc>
-    <lastmod>2020-12-17T13:50:11-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://JulieEdwardsPaleo.github.io/publication/lakimasters/</loc>
     <lastmod>2020-12-17T13:50:11-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://JulieEdwardsPaleo.github.io/authors/oelkers/</loc>
     <lastmod>2020-12-17T13:50:11-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://JulieEdwardsPaleo.github.io/publication_types/</loc>
-    <lastmod>2020-12-17T13:50:11-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://JulieEdwardsPaleo.github.io/publication/</loc>
-    <lastmod>2020-12-17T13:50:11-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://JulieEdwardsPaleo.github.io/authors/zambri/</loc>
     <lastmod>2020-12-17T13:50:11-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://JulieEdwardsPaleo.github.io/authors/i.-panyushkina/</loc>
     <lastmod>2020-11-23T23:26:30-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://JulieEdwardsPaleo.github.io/publication/ob-river/</loc>
     <lastmod>2020-11-23T23:26:30-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://JulieEdwardsPaleo.github.io/authors/j.-edwards/</loc>
     <lastmod>2020-11-23T23:26:30-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://JulieEdwardsPaleo.github.io/authors/l.-agafonov/</loc>
     <lastmod>2020-11-23T23:26:30-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://JulieEdwardsPaleo.github.io/project/collabresearch/</loc>
     <lastmod>2020-05-12T18:12:45-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://JulieEdwardsPaleo.github.io/talk/agu2019/</loc>
-    <lastmod>2019-12-12T13:40:00-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://JulieEdwardsPaleo.github.io/project/lakimasters/</loc>
     <lastmod>2019-12-02T16:55:16-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://JulieEdwardsPaleo.github.io/project/ob-river/</loc>
     <lastmod>2019-11-23T23:56:23-07:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://JulieEdwardsPaleo.github.io/post/</loc>
     <lastmod>2019-09-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://JulieEdwardsPaleo.github.io/post/writing-technical-content/</loc>
     <lastmod>2019-07-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://JulieEdwardsPaleo.github.io/authors/admin/</loc>
     <lastmod>2019-09-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://JulieEdwardsPaleo.github.io/post/jupyter/</loc>
     <lastmod>2019-09-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://JulieEdwardsPaleo.github.io/slides/</loc>
     <lastmod>2019-02-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://JulieEdwardsPaleo.github.io/slides/example/</loc>
     <lastmod>2019-02-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://JulieEdwardsPaleo.github.io/tags/academic/</loc>
     <lastmod>2019-04-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://JulieEdwardsPaleo.github.io/post/getting-started/</loc>
     <lastmod>2019-04-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://JulieEdwardsPaleo.github.io/categories/</loc>
     <lastmod>2019-04-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://JulieEdwardsPaleo.github.io/categories/demo/</loc>
     <lastmod>2019-04-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://JulieEdwardsPaleo.github.io/tags/</loc>
     <lastmod>2019-04-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://JulieEdwardsPaleo.github.io/post/2015-07-23-r-rmarkdown/</loc>
     <lastmod>2015-07-23T21:13:14-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://JulieEdwardsPaleo.github.io/tags/plot/</loc>
     <lastmod>2015-07-23T21:13:14-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://JulieEdwardsPaleo.github.io/categories/r/</loc>
     <lastmod>2015-07-23T21:13:14-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://JulieEdwardsPaleo.github.io/tags/r-markdown/</loc>
     <lastmod>2015-07-23T21:13:14-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://JulieEdwardsPaleo.github.io/tags/regression/</loc>
     <lastmod>2015-07-23T21:13:14-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://JulieEdwardsPaleo.github.io/authors/b./</loc>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://JulieEdwardsPaleo.github.io/authors/b.-e./</loc>
+  </url><url>
+    <loc>https://JulieEdwardsPaleo.github.io/authors/c./</loc>
+  </url><url>
     <loc>https://JulieEdwardsPaleo.github.io/authors/g./</loc>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://JulieEdwardsPaleo.github.io/authors/h.w./</loc>
+  </url><url>
     <loc>https://JulieEdwardsPaleo.github.io/authors/j./</loc>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://JulieEdwardsPaleo.github.io/authors/k./</loc>
+  </url><url>
+    <loc>https://JulieEdwardsPaleo.github.io/authors/k.-j./</loc>
+  </url><url>
     <loc>https://JulieEdwardsPaleo.github.io/authors/k.j./</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://JulieEdwardsPaleo.github.io/authors/l./</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://JulieEdwardsPaleo.github.io/authors/meko-d./</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://JulieEdwardsPaleo.github.io/authors/r./</loc>
   </url>
-  
 </urlset>
